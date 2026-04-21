@@ -26,15 +26,13 @@ public class OperacoesVetor {
 
         double media = (double) soma / vetor.length;
 
-        System.out.println(Thread.currentThread().getName() +
-                " -> Soma: " + soma + " | Média: " + media);
+        System.out.println(Thread.currentThread().getName() + " -> Soma: " + soma + " | Média: " + media);
     }
 
     public void ordenar() {
         Arrays.sort(vetor);
 
-        System.out.println(Thread.currentThread().getName() +
-                " -> Vetor ordenado: " + Arrays.toString(vetor));
+        System.out.println(Thread.currentThread().getName() + " -> Vetor ordenado: " + Arrays.toString(vetor));
     }
 
     public void maiorMenor() {
@@ -51,8 +49,7 @@ public class OperacoesVetor {
             }
         }
 
-        System.out.println(Thread.currentThread().getName() +
-                " -> Maior: " + maior + " | Menor: " + menor);
+        System.out.println(Thread.currentThread().getName() + " -> Maior: " + maior + " | Menor: " + menor);
     }
 
     public void modificar() {
@@ -64,8 +61,7 @@ public class OperacoesVetor {
         novoVetor[vetor.length] = novo;
         vetor = novoVetor;
 
-        System.out.println(Thread.currentThread().getName() +
-                " -> Número adicionado: " + novo);
+        System.out.println(Thread.currentThread().getName() + " -> Número adicionado: " + novo);
 
         // Remover elemento aleatório
         if (vetor.length > 0) {
@@ -83,8 +79,7 @@ public class OperacoesVetor {
 
             vetor = vetorTemp;
 
-            System.out.println(Thread.currentThread().getName() +
-                    " -> Removeu índice: " + indiceRemover);
+            System.out.println(Thread.currentThread().getName() + " -> Removeu índice: " + indiceRemover);
         }
 
         // Contar pares
@@ -95,10 +90,8 @@ public class OperacoesVetor {
             }
         }
 
-        System.out.println(Thread.currentThread().getName() +
-                " -> Quantidade de pares: " + pares);
+        System.out.println(Thread.currentThread().getName() + " -> Quantidade de pares: " + pares);
 
-        System.out.println(Thread.currentThread().getName() +
-                " -> Vetor final: " + Arrays.toString(vetor));
+        System.out.println(Thread.currentThread().getName() + " -> Vetor final: " + Arrays.toString(vetor));
     }
 }
